@@ -7,6 +7,12 @@ Write a function that accepts an array of strings. Return the longest string.
 
 const longestString = (arr) => {
     // Solution code here...
+
+   let  long = arr.reduce(function(a, b) { 
+        return a.length > b.length ? a : b
+      }, '');
+      return long;
+     
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -25,6 +31,15 @@ isSimilar("cat","act")
 
 const isSimilar = (arr) => {
     // Solution code here...
+    //  let x=arr.split(' ');;
+    //  arr.forEach(element => {
+    // element.localeCompare(element[0])
+    // if( ){
+    //     return true;
+    // }else{
+    //     return false;
+    // }
+    //  });
 };
 
 /* ------------------------------------------------------------------------------------------------
